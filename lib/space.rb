@@ -11,6 +11,8 @@ class Space
   def reserve(car)  #reserves for a specific car:id
     if reservedfor = nil
       reservedfor = car.id
+    else
+      flash[:notice] "an error occured, space occupied"
     end
   end
 
